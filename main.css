@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Racing+Sans+One&family=Roboto:wght@150&display=swap');
+
+.container {
+    width: 100vw;
+    height: 400vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 110px 800px 1fr 1fr 1fr 1fr;
+}
+
+.header {
+    font-family: "Montserrat", sans-serif;
+    background-color: #181818;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.logo {
+    cursor: pointer;
+    max-width: 200px;
+    place-items: center;
+    margin-top: 12px;
+}
+
+nav ul {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+nav ul li {
+    line-height: 100px;
+}
+
+a.navbuttons {
+    text-decoration: none;
+    color: darkgray;
+}
+
+.navlinks li a:hover {
+    color: goldenrod;
+}
+
+.navlinks li a {
+    transition: all 0.4s ease 0s;
+}
+
+button.brandbtn {
+    cursor: pointer;
+    background-color: #181818;
+    color: darkgray;
+    transition: all 0.4s ease 0s;
+    border: none;
+    text-transform: uppercase;
+    font-size: 17px;    
+}
+
+button.brandbtn:hover {
+    color: goldenrod;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.445);
+    z-index: 4;
+}
+
+.dropdown-content a {
+    display: block;
+    text-decoration: none;
+    background-color: #181818;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(51, 51, 51);
+}
+
+.dropdown-content a:focus {
+    background-color: goldenrod;
+    transition: all 0.4s ease 0s;
+}
+
+.dropdown-content a:active {
+    background-color: white;
+    transition: all 0.4s ease 0s;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#brandlogos {
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    max-width: 140px;
+    top: 15px;
+
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    overflow-y:auto;
+}
+
+video#videoBG {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: middle;
+    filter: brightness(80%);
+}
+
+.main {
+    z-index: 1;
+    color: ivory;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+h2.maincontent {
+    cursor: pointer;
+    position: relative;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-top: -580px;
+    margin-left: 151px;
+}
+
+p.firstline {
+    cursor: pointer;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 130px;
+    position: absolute;
+    margin-top: -92px;
+    margin-left: 150px;
+    text-transform: uppercase;
+}
+
+p.secondline {
+    cursor: pointer;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 130px;
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 150px;
+    text-transform: uppercase;
+
+}
+
+.second-section {
+    background-color: #101010;
+    color: ivory;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0;
+    padding: 0;
+}
+
+.sec2-wrapper {
+    display: grid;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+}
+
+#vigerozxthumbnail {
+    grid-column-start: 2;
+    grid-column-end: 21;
+    grid-row-start: 2;
+    grid-row-end: 9;
+    object-fit: cover;
+    width: 100%;
+    filter: brightness(50%);
+}
+
+#playbtn {
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 11;
+    grid-column-end: 12;
+    object-fit: cover;
+    z-index: 1;
+    width: 100%;
+    cursor: pointer;
+}
+
+#playbtn:hover {
+    filter: invert();
+}
+
+.third-section {
+    display: grid;
+    grid-template-columns: 1fr 5fr 10fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    background-color: ivory;
+    color: black;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+#img-third {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.overview {
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 0 5%;
+}
+
+.overview-content {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.title {
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+p.overview-description {
+    margin: 0;
+    font-family: Roboto, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 20px;
+    line-height: 25pt;
+}
+
+.fourth-section {
+    background-color: #101010;
+    color: ivory;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.sec4-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.sec4-content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 5%;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#techspech {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.sec4-paragraph-wrapper {
+    display: grid;
+    grid-template-rows: 5fr;
+}
+
+#categories {
+    margin: 5% 0;
+    text-transform: uppercase;
+    float: left;
+    font-weight: bolder;
+}
+
+#hr-specs {
+    margin: 0;
+}
+
+#values {
+    text-transform: none;
+    float: right;
+    font-weight: lighter;
+}
+
+.footer {
+    background-color: #181818;
+    color: ivory;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+hr {
+    border: thin solid rgb(53, 53, 53);
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.footercontent {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-items: center;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+#socmed-icons {
+    filter: invert();
+    width: 7%;
+    padding: 0 10px;
+    float: right;
+}
+
+#socmed-icons:hover {
+    color: goldenrod;
+}
+
+p.firstsec {
+    cursor: crosshair;
+    color: #222120;
+    text-align: left;
+}

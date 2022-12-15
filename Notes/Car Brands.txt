@@ -1,0 +1,16 @@
+Benefactor = Mercedes
+Bürgerfahrzeug = BMW
+Declasse = Chevrolet
+Dewbauchee = Aston Martin
+Dinka = Toyota
+Grotti = Ferrari
+Karin = Mitsubishi Motors
+Lampadati = Masserati
+Obey = Audi
+Ocelot = Jaguara
+Pegassi = Lamborghini
+Pfister = Porsche
+Progen = Mclaren
+Truffade = Bugatti
+Vapid = Dodge
+Överflöd = Koenigsegg
